@@ -3,12 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CALENDAR</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Simplified Calendar</title>
     
+    <link rel="stylesheet" href="style.css">
 
 </head> 
 <body>
-    <h1>CALENDAR</h1>
+
+    <h1>Simple Google-Style Calendar</h1>
+
+    <div class="calendar">
+        <div class="calendar-header">
+            <button id="prevMonth">◀</button>
+            <h2 id="monthYear"></h2>
+            <button id="nextMonth">▶</button>
+        </div>
+
+        <div class="weekdays">
+            <div>Sun</div><div>Mon</div><div>Tue</div>
+            <div>Tue</div><div>Wed</div><div>Thu</div>
+            <div>Fri</div><div>Sat</div>
+        </div>
+
+        <div id="calendarDays" class="days"></div>
+    </div>
+
 </body>
 </html>
