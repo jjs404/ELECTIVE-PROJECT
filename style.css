@@ -24,3 +24,18 @@ body {
     grid-template-columns: repeat(7, 1fr);
 }
 
+.days div {
+    padding: 10px;
+    margin: 2px;
+    min-height: 60px;
+    font-size: 16px;
+    background: #f5f5f5;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+}
+
+.today {
+    background: #4285F4 !important;
+    color: #fff;
+}
