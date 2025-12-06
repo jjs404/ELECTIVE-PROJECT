@@ -12,3 +12,15 @@ body {
     border-radius: 10px;
     box-shadow: 0 3px 12px rgba(0,0,0,0.2);
 }
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.weekdays, days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
