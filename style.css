@@ -5,10 +5,119 @@ body {
     margin: 0;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+ul li {
+  float: right;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #111111;
+}
+
+h1 {
+    float: left;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: xx-large;
+}
+
+.back {
+    background:rgb(151, 50, 50);
+    width: 100px;
+    margin: auto;
+}
+
 .calendar {
-    width: 650px;
+    float: right;
+    width: 1150px;
     margin: auto;
     padding: 20px;
+    margin-top: 30px;
+    background: rgb(214, 214, 214);
     border-radius: 10px;
     box-shadow: 0 3px 12px rgba(0,0,0,0.2);
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.weekdays, .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.days div {
+    padding: 10px;
+    margin: 2px;
+    min-height: 60px;
+    font-size: 16px;
+    background: #fafafa;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+}
+
+.today {
+    background: #4285F4 !important;
+    color: #fff;
+}
+
+.event {
+    font-size: 10px;
+    background: rgb(255, 198, 93);
+    padding: 2px 4px;
+    border-radius: 4px;
+    margin-top: 4px;
+}
+
+.deleteEvent {
+    float: right;
+    cursor: pointer;
+    padding-left: 8px;
+    color: red;
+    font-weight: bold;
+}
+
+ /* POPUP  */
+.popup {
+    position: fixed;
+    width: 260px;
+    background: white;
+    padding: 15px;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.hidden {
+    display: none;
+}
+
+.popup input, .popup select {
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 10px;
 }
